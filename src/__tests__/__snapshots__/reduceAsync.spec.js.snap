@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reduceAsync ... 1`] = `
+Object {
+  "reduce.js": 82,
+  "reverse.js": 83,
+}
+`;

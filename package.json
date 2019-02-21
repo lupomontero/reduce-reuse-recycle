@@ -1,0 +1,12 @@
+{
+  "name": "reduce-reuse-recycle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
