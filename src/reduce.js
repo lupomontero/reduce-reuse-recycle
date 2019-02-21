@@ -8,6 +8,12 @@ const reduceImperative = (arr, fn, initialValue) => {
 
 const reduceNative = (arr, fn, initialValue) => arr.reduce(fn, initialValue);
 
+const reduceNaive = (arr, fn, initialValue) => (
+  (!arr.length)
+    ? initialValue
+    : reduceNaive(arr.slice(1), fn, fn(initialValue, arr[0]))
+);
+
 const reduce = (arr, fn, initialValue) => {
   const recurse = (remaining, prev, idx) => (
     (!remaining.length)
@@ -17,12 +23,6 @@ const reduce = (arr, fn, initialValue) => {
 
   return recurse(arr, initialValue, 0);
 };
-
-const reduceNaive = (arr, fn, initialValue) => (
-  (!arr.length)
-    ? initialValue
-    : reduceNaive(arr.slice(1), fn, fn(initialValue, arr[0]))
-);
 
 module.exports = reduce;
 module.exports.reduce = reduce;
