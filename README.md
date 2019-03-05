@@ -1,5 +1,12 @@
 # Reduce, reuse, recycle
 
+Este repo contiene los ejemplos usados en la charla _Reduce, reuse, recycle_
+presentada en [LimaJS el 21 de febrero 2019](https://www.meetup.com/LimaJS/events/fqzsdqyzdbcc/).
+
+Acá puedes ver también los [slides usados en la presentación](https://docs.google.com/presentation/d/e/2PACX-1vT5RkPmsnGUZ1A8KgwklCnQ3Vck21Ux6V2SNXPQWZLlLYO1a13TOL39c0o5P-JI7FUDZT-NjgKYfFde/pub?start=false&loop=false&delayms=3000).
+
+***
+
 Objetivo: implementar función `reduce(arr, fn, initialValue)` y usarla para
 implementar `map`, `filter`, `forEach`, `join`, `includes`, `indexOf`,
 `lastIndexOf`, `reverse`, ...
@@ -11,7 +18,7 @@ Reglas:
 * No re-asignación.
 * Inmutabilidad.
 
-`reduce` iterativo:
+`reduce` iterativo (sin tener en cuenta _reglas_):
 
 ```js
 const reduce = (arr, fn, initialValue) => {
